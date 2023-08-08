@@ -1,5 +1,4 @@
 <template>
-    <MainBar/>
     <RouterView />
 </template>
 

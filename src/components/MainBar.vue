@@ -1,8 +1,8 @@
 <template>
-  <header class="bg-mossgreen justify-between h-16 flex  shadow-custom1 shadow-black">
-        <div class="flex">
+  <header class="bg-mossgreen justify-between h-16 flex shadow-custom1 shadow-black ">
+        <div class="flex items-center dim:-mt-3">
             <img :src="acampicon" class="pt-2 ps-2 h-12 content-center" alt="acamp-icon">
-            <h3 class="pt-2 font-outfit text-3xl font-bold leading-normal text-right text-olive-black relative">ACAMP SEMEAR</h3>
+            <h3 class="dim:text-lg dim:text-center pt-2 font-outfit text-3xl font-bold leading-normal text-right text-olive-black relative">ACAMP SEMEAR</h3>
         </div>
   </header>
 </template>
