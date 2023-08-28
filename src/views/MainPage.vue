@@ -22,29 +22,33 @@
       <img :src="acampbackground" class="w-full h-auto "/>
     </div>
   </div>
-  <div class="flex flex-nowrap ">
-    <div class="relative w-2/4 min-h-full">
+  <div>
+    <div class="absolute flex flex-nowrap justify-center p-4">
       <div class="absolute z-20">
-        <p class="text-[#ffff] items-center m-10 font-semibold font-pathway">TEXTO</p>
-      </div>
-      <div>
         <div>
-          <div class="opacity-25 absolute w-2/4 min-h-full bg-halloween-orange"></div>
-          <div class="opacity-25 absolute translate-x-full w-2/4 min-h-full bg-palatinate-blue"></div>
+          <p class="text-[#ffff] m-10 font-semibold font-pathway">TEXTO</p>
         </div>
-          <img :src="teamimage" alt="Imagem Reativa" class="w-full h-auto -z-10" />
+      </div>
+      <div class="relative w-2/4 min-h-full">
+        <div>
+          <div>
+            <div class="opacity-25 absolute w-2/4 min-h-full bg-halloween-orange"></div>
+            <div class="opacity-25 absolute translate-x-full w-2/4 min-h-full bg-palatinate-blue"></div>
+          </div>
+            <img :src="teamimage" alt="Imagem Reativa" class="w-full h-auto -z-10" />
+        </div>
       </div>
     </div>
-    <div class="relative w-2/4 min-h-full">
-       <div class="bg-olive-black min-h-full">
+  </div>
+  <div class="static w-full">
+     <div class="bg-olive-black">
+      &nbsp;
+     </div>
+  </div>
+  <div class="h-[1000px]">
+    &nbsp;
+  </div>
 
-       </div>
-    </div>
-  </div>
-  <div class="bg-white min-h-full w-full">
-    <p>a</p>
-  </div>
-  <div class="h-[1000px]">a</div>
 </template>
 
 <script setup>
