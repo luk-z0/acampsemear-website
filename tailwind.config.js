@@ -18,6 +18,12 @@ module.exports = {
       outfit: ['Outfit', 'sans-serif'],
       pathway: ['Pathway Gothic One', 'sans-serif'],
     },
+    letterSpacing:{
+      '5': '0.5em',
+      '6': '0.6em',
+      '7': '0.7em',
+      '8': '0.8em',
+    },
     extend: {
       keyframes:{
         slideDown:{

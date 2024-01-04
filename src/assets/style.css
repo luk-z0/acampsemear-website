@@ -16,5 +16,14 @@
         font-family: 'Pathway Gothic One', sans-serif;
         src: url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
     }
+
+    @font-face {
+        font-family: 'Signika Negative SC', sans-serif;
+        src: url('./font/signika-negative-sc-cufonfonts/SignikaNegativeSC-Bold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+    }
+      
+
 }
 
