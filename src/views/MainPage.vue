@@ -73,6 +73,23 @@
       </div>
     </div> 
   </div>
+  <div class="w-full h-full"> 
+    <div class="mx-20 px-40">
+      <div class="flex justify-center w-auto h-auto">
+          <h3 class="m-20 font-outfit text-mossgreen text-6xl">Propósito</h3>
+      </div>
+      <div class="flex w-auto h-auto bottom-6 inset-x-0">
+        <p class="text-light-khaki text-center justify-center font-bold text-white font-outfit 2xl:text-4xl xl:text-3xl lg:text-2xl md:text-lg sm:text-lg dim:text-[6px]">
+          Texto falando do principal propósito dos acampamentos e a sua importância para a cooperação do reino, onde todo esforço e dedicação são destinadas para a glória de Deus, onde temos como o alvo o autor da nossa salvação, Jesus Cristo, nosso salvador.
+        </p>
+      </div>
+    </div>
+ </div>
+ <div>
+    <div class="bg-olive-black w-full h-full">
+      
+    </div>
+ </div>
 </template>
 
 <script setup>
