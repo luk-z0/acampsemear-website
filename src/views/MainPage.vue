@@ -8,13 +8,13 @@
           <div class="sm:my-16 sm:mx-8 xl:my-64 lx:mx-32 lg:my-32">
             <h3 class="sm:text-4xl md:text-3xl lg:text-6xl  font-normal text-left  text-[#AADE76] font-pathway">
               MARCANDO MOMENTOS,
-              <br>
+              <br class="dim:hidden">
               VIVENDO AVENTURAS.
             </h3>
             <p
               class="dim:text-[8px] sm:text-xs sm:text-left text-[#D0E3BD] lg:text-2xl md:text-lg my-2 text-justify font-pathway hyphens-auto w-4/5">
               O acampamento da Igreja Batista Semear com Cristo está cada dia mais aprimorado,<br
-                class="2xl:block md:hidden sm:hidden"> buscando trazer a cada temporada momentos inesqueciveis.
+                class="2xl:block md:hidden sm:hidden dim:hidden"> buscando trazer a cada temporada momentos inesqueciveis.
             </p>
           </div>
         </div>
@@ -29,19 +29,19 @@
           <div class="flex">
             <div class="absolute w-2/4 h-full">
               <h2
-                class="absolute text-center font-signika font-bold xl:text-6xl 2xl:text-7xl lg:text-5xl sm:text-4xl dim:text-2xl leading-tight tracking-8 text-halloween-orange w-full mt-10 xl:mt-40 pl-2">
+                class="absolute text-center font-signika font-bold leading-tight 2xl:tracking-8 xl:tracking-8 lg:tracking-8 sm:tracking-8 dim:tracking-[0.6em] xl:text-6xl 2xl:text-7xl lg:text-5xl sm:text-4xl dim:text-2xl  text-halloween-orange w-full dim:mt-5 mt-10 xl:mt-40 lg:mt-20 md:mt-20 pl-2">
                 TIGER</h2>
               <div class="absolute opacity-25 bg-halloween-orange w-full h-full"></div>
             </div>
             <div class="absolute translate-x-full w-2/4 h-full">
               <h2
-                class="absolute text-center font-outfit font-bold leading-tight tracking-8 xl:text-6xl 2xl:text-7xl lg:text-5xl sm:text-4xl dim:text-2xl text-palatinate-blue min-w-full mt-10 xl:mt-40 pl-2">
+                class="absolute text-center font-outfit font-bold leading-tight 2xl:tracking-8 xl:tracking-8 lg:tracking-8 sm:tracking-8 dim:tracking-[0.6em] xl:text-6xl 2xl:text-7xl lg:text-5xl sm:text-4xl dim:text-2xl text-palatinate-blue min-w-full dim:mt-5 mt-10 xl:mt-40 lg:mt-20 md:mt-20 pl-2">
                 SHARK</h2>
               <div class="absolute opacity-25 bg-palatinate-blue min-w-full min-h-full"></div>
             </div>
-            <div class="absolute w-auto h-auto md:p-10 sm:p-10 lg:p-10 xl:p-10 dim:m-5 dim:p-1 bottom-0 inset-x-0">
+            <div class="absolute w-auto h-auto md:p-10 sm:p-10 lg:p-10 xl:p-10 dim:m-10 dim:p-1 bottom-0 md:bottom-12 lg:bottom-24 inset-x-0">
               <p
-                class="text-[#ffff] text-center font-bold text-white font-outfit leading-[191.7%] tracking-[6.24px] justify-center 2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-lg dim:text-[5px]">
+                class="text-[#ffff] text-center font-bold text-white font-outfit sm:leading-5 md:leading-5 lg:leading-5 xl:leading-2 lg:tracking-6 md:tracking-6 sm:tracking-6 dim:tracking-6 justify-center 2xl:text-4xl xl:text-3xl lg:text-2xl md:text-lg sm:text-lg dim:text-[6px]">
                 União, força e disciplina, pilares para a vitória , alcance o mais alto pódio durante a competição, não
                 desista e persevere, não importa o time,azul ou laranja , o nosso lider sempre será cristo.
               </p>
