@@ -90,12 +90,14 @@
 
     </div>
  </div> -->
+ <!-- <Footer/> -->
 </template>
 
 <script setup>
 import acampbackground from "./../assets/image/img-background-header-acamp.png";
 import teamimage from "./../assets/image/mvp-image.jpg";
 import MainBar from "./../components/MainBar.vue";
+import Footer from "./../components/Footer.vue";
 </script>
 
 
