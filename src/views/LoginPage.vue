@@ -1,21 +1,21 @@
 <template>
-    <MainBar class="fixed w-full top-0 z-50" />
-    <div class="relative min-h-screen flex items-center justify-center">
-        <img :src="bglogin" alt="" class="absolute object-cover w-full h-full"/>
+    <MainBar class="w-full top-0 z-50" />
+    <div class="min-h-screen flex items-center justify-center">
+        <img :src="bglogin" alt="" class="object-cover w-full h-full"/>
         <!-- <video autoplay loop muted playsinline class="absolute object-cover w-full h-full">
             <source :src="river" type="video/mp4" />
             Seu navegador não suporta a tag de vídeo.
         </video> -->
 
         <!-- <div class="absolute inset-0 bg-black opacity-50"></div> -->
-        <div class="flex absolute w-full min-h-full justify-center">
-            <div class="flex justify-center bg-mossgreen">
-                <div class="flex absolute min-h-full flex-1 flex-col justify-center lg:px-8 ">
+        <div class="flex w-full min-h-full justify-center absolute">
+            <div class="flex justify-center">
+                <div class="flex absolute min-h-full flex-1 flex-col justify-center lg:px-8">
                     <div class="w-auto h-auto bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100
                     px-16 py-12 shadow-lg">
                         <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-                            <img class="mx-auto h-10 w-auto" alt="" :src="acampicon"/>
-                            <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-[#fff]">
+                            <img class="mx-auto h-32 w-auto size-20"  alt="" :src="acampicon"/>
+                            <h2 class="text-center text-2xl font-bold leading-9 tracking-tight text-[#fff]">
                                 Entrar
                             </h2>
                         </div>
@@ -56,11 +56,13 @@
             </div>
         </div>
     </div>
+    <Footer/>
 </template>
 
 <script setup>
 import acampicon from './../assets/image/acamp-icon.png';
 import MainBar from './../components/MainBar.vue';
+import Footer from './../components/Footer.vue';
 import router from '../router';
 import bglogin from './../assets/image/bglogin.jpg'
 
