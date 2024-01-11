@@ -1,10 +1,11 @@
 <template>
     <MainBar class="fixed w-full top-0 z-50" />
     <div class="relative min-h-screen flex items-center justify-center">
-        <video autoplay loop muted playsinline class="absolute object-cover w-full h-full">
+        <img :src="bglogin" alt="" class="absolute object-cover w-full h-full"/>
+        <!-- <video autoplay loop muted playsinline class="absolute object-cover w-full h-full">
             <source :src="river" type="video/mp4" />
             Seu navegador não suporta a tag de vídeo.
-        </video>
+        </video> -->
 
         <!-- <div class="absolute inset-0 bg-black opacity-50"></div> -->
         <div class="flex absolute w-full min-h-full justify-center">
@@ -13,8 +14,7 @@
                     <div class="w-auto h-auto bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100
                     px-16 py-12 shadow-lg">
                         <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-                            <!-- <img class="mx-auto h-10 w-auto"
-                                alt="" /> -->
+                            <img class="mx-auto h-10 w-auto" alt="" :src="acampicon"/>
                             <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-[#fff]">
                                 Entrar
                             </h2>
@@ -48,7 +48,7 @@
                                 Não possui conta?
                                 {{ " " }}
                                 <router-link to="/register"
-                                    class="font-semibold leading-6 text-orange-100 hover:text-orange-600">Registre-se</router-link>
+                                    class="font-semibold leading-6 text-orange-600 hover:text-orange-900">Registre-se</router-link>
                             </p>
                         </div>
                     </div>
@@ -59,9 +59,10 @@
 </template>
 
 <script setup>
+import acampicon from './../assets/image/acamp-icon.png';
 import MainBar from './../components/MainBar.vue';
-import river from './../assets/video/atmosphere.mp4';
 import router from '../router';
+import bglogin from './../assets/image/bglogin.jpg'
 
 
 function getHome() {
