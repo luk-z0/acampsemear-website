@@ -53,18 +53,18 @@
     </div>
   </div>
   <div class="flex flex-row dim:flex-col">
-    <div class="flex bg-light-khaki w-1/2 dim:w-full justify-center min-h-full py-5">
+    <div class="flex bg-olive-black w-1/2 dim:w-full justify-center min-h-full py-5">
       <div class="flex flex-wrap flex-col">
         <div class="transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 hover:bg-shadow-black duration-200 bg-halloween-orange rounded-lg 2xl:m-5 2xl:px-32 2xl:py-40 dim:px-16 dim:py-20 dim:m-2 shadow-lg"></div>
         <div class="transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 hover:bg-shadow-black duration-200 bg-palatinate-blue rounded-lg 2xl:m-5 2xl:px-32 2xl:py-40 dim:px-16 dim:py-20 dim:m-2 shadow-lg"></div>
       </div>
       <div class="flex flex-wrap flex-col">
-        <div class="transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 hover:bg-shadow-black duration-200 bg-olive-black rounded-lg 2xl:m-5 2xl:px-32 2xl:py-40 dim:px-16 dim:py-20 dim:m-2 shadow-lg"></div>
+        <div class="transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 hover:bg-shadow-black duration-200 bg-light-khaki rounded-lg 2xl:m-5 2xl:px-32 2xl:py-40 dim:px-16 dim:py-20 dim:m-2 shadow-lg"></div>
         <div class="transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 hover:bg-shadow-black duration-200 bg-mossgreen rounded-lg 2xl:m-5 2xl:px-32 2xl:py-40 dim:px-16 dim:py-20 dim:m-2 shadow-lg"></div>
       </div>
     </div>
     <div class="w-1/2 dim:w-full max-h-full">
-      <div class="flex items-center justify-center h-full bg-light-khaki dim:bg-mossgreen p-2">
+      <div class="flex items-center justify-center h-full bg-olive-black dim:bg-mossgreen p-2">
         <div class="rounded-md w-3/4 h-3/4 dim:w-full dim:h-full bg-mossgreen dim:bg-none">
          <div class="flex items-center justify-center w-full h-full">
             <iframe  class="w-3/4 h-3/4 aspect-video dim:rounded-md" src="https://www.youtube.com/embed/q1pBwQl6zZ0?si=3Q5_KldJpdQTfGFZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
