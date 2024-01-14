@@ -3,7 +3,7 @@
   <div class="relative">
     <div class="relative">
       <div class="min-h-full w-full absolute opacity-50 bg-olive-black"></div>
-      <div class="absolute mx-32 h-full w-2/4 hover:">
+      <div class="absolute mx-32 h-full w-2/4">
         <div class="dim:-ml-20 dim:mt-10">
           <div class="sm:my-16 sm:mx-8 xl:my-64 lx:mx-32 lg:my-32">
             <h3 class="sm:text-4xl md:text-3xl lg:text-6xl  font-normal text-left  text-[#AADE76] font-pathway">
@@ -19,7 +19,8 @@
           </div>
         </div>
       </div>
-      <img :src="acampbackground" class="w-full h-auto " />
+      <Carousel class="-z-10"/>
+      <!-- <img :src="acampbackground" class="w-full h-auto " /> -->
     </div>
   </div>
   <div class="flex flex-nowrap ">
@@ -39,7 +40,8 @@
                 SHARK</h2>
               <div class="absolute opacity-25 bg-palatinate-blue min-w-full min-h-full"></div>
             </div>
-            <div class="absolute w-auto h-auto md:p-10 sm:p-10 lg:p-10 xl:p-10 dim:m-10 dim:p-1 bottom-0 md:bottom-12 lg:bottom-24 inset-x-0">
+            <div
+              class="absolute w-auto h-auto md:p-10 sm:p-10 lg:p-10 xl:p-10 dim:m-10 dim:p-1 bottom-0 md:bottom-12 lg:bottom-24 inset-x-0">
               <p
                 class="text-[#ffff] text-center font-bold text-white font-outfit sm:leading-5 md:leading-5 lg:leading-5 xl:leading-2 lg:tracking-6 md:tracking-6 sm:tracking-6 dim:tracking-6 justify-center 2xl:text-4xl xl:text-3xl lg:text-2xl md:text-lg sm:text-lg dim:text-[6px]">
                 União, força e disciplina, pilares para a vitória , alcance o mais alto pódio durante a competição, não
@@ -55,19 +57,31 @@
   <div class="flex flex-row dim:flex-col">
     <div class="flex bg-olive-black w-1/2 dim:w-full justify-center min-h-full py-5">
       <div class="flex flex-wrap flex-col">
-        <div class="transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 hover:bg-shadow-black duration-200 bg-halloween-orange rounded-lg 2xl:m-5 2xl:px-32 2xl:py-40 dim:px-16 dim:py-20 dim:m-2 shadow-lg"></div>
-        <div class="transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 hover:bg-shadow-black duration-200 bg-palatinate-blue rounded-lg 2xl:m-5 2xl:px-32 2xl:py-40 dim:px-16 dim:py-20 dim:m-2 shadow-lg"></div>
+        <div
+          class="transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 hover:bg-shadow-black duration-200 bg-halloween-orange rounded-lg 2xl:m-5 2xl:px-32 2xl:py-40 dim:px-16 dim:py-20 dim:m-2 shadow-lg">
+        </div>
+        <div
+          class="transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 hover:bg-shadow-black duration-200 bg-palatinate-blue rounded-lg 2xl:m-5 2xl:px-32 2xl:py-40 dim:px-16 dim:py-20 dim:m-2 shadow-lg">
+        </div>
       </div>
       <div class="flex flex-wrap flex-col">
-        <div class="transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 hover:bg-shadow-black duration-200 bg-light-khaki rounded-lg 2xl:m-5 2xl:px-32 2xl:py-40 dim:px-16 dim:py-20 dim:m-2 shadow-lg"></div>
-        <div class="transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 hover:bg-shadow-black duration-200 bg-mossgreen rounded-lg 2xl:m-5 2xl:px-32 2xl:py-40 dim:px-16 dim:py-20 dim:m-2 shadow-lg"></div>
+        <div
+          class="transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 hover:bg-shadow-black duration-200 bg-light-khaki rounded-lg 2xl:m-5 2xl:px-32 2xl:py-40 dim:px-16 dim:py-20 dim:m-2 shadow-lg">
+        </div>
+        <div
+          class="transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 hover:bg-shadow-black duration-200 bg-mossgreen rounded-lg 2xl:m-5 2xl:px-32 2xl:py-40 dim:px-16 dim:py-20 dim:m-2 shadow-lg">
+        </div>
       </div>
     </div>
     <div class="w-1/2 dim:w-full max-h-full">
       <div class="flex items-center justify-center h-full bg-olive-black dim:bg-mossgreen p-2">
         <div class="rounded-md w-3/4 h-3/4 dim:w-full dim:h-full bg-mossgreen dim:bg-none">
-         <div class="flex items-center justify-center w-full h-full">
-            <iframe  class="w-3/4 h-3/4 aspect-video dim:rounded-md" src="https://www.youtube.com/embed/q1pBwQl6zZ0?si=3Q5_KldJpdQTfGFZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="flex items-center justify-center w-full h-full">
+            <iframe class="w-3/4 h-3/4 aspect-video dim:rounded-md"
+              src="https://www.youtube.com/embed/nf4aaFNcLHQ?si=Fm_zv5-W1ElIJy1Y" title="Video Acamp 2023"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -90,7 +104,11 @@
 
     </div>
  </div> -->
- <Footer/>
+ 
+
+  
+  <!-- <Carousel/> -->
+  <Footer />
 </template>
 
 <script setup>
@@ -98,9 +116,10 @@ import acampbackground from "./../assets/image/img-background-header-acamp.png";
 import teamimage from "./../assets/image/mvp-image.jpg";
 import MainBar from "./../components/MainBar.vue";
 import Footer from "./../components/Footer.vue";
+import Carousel from "./../components/Carousel.vue";
+
+
 </script>
 
 
-<style>
-
-</style>
+<style></style>
