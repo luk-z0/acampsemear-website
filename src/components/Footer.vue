@@ -13,7 +13,7 @@
                   <h2 class="mb-6 text-sm font-bold text-olive-black uppercase">Support</h2>
                   <ul class="text-gray-800 font-medium">
                       <li class="mb-4">
-                          <a href="https://flowbite.com/" class="hover:underline">FAQ</a>
+                          <a href="/" class="hover:underline">FAQ</a>
                       </li>
                       <li>
                           <router-link to="/contact" class="hover:underline">Contact</router-link>

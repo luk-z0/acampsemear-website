@@ -2,11 +2,6 @@
     <MainBar class="w-full top-0 z-50" />
     <div class="min-h-screen flex items-center justify-center">
         <img :src="bglogin" alt="" class="object-cover w-full h-full" />
-        <!-- <video autoplay loop muted playsinline class="absolute object-cover w-full h-full">
-            <source :src="river" type="video/mp4" />
-            Seu navegador não suporta a tag de vídeo.
-        </video> -->
-
         <!-- <div class="absolute inset-0 bg-black opacity-50"></div> -->
         <div
             class="flex w-1/2 min-h-full justify-center absolute bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 shadow-lg">
@@ -15,7 +10,7 @@
                     <div class="flex flex-col w-auto h-auto">
                         <div class="sm:mx-auto sm:w-full sm:max-w-sm">
                             <img class="mx-auto h-32 w-auto size-20" alt="" :src="acampicon" />
-                            <h2 class="text-center text-2xl font-bold leading-9 tracking-tight text-[#fff]">
+                            <h2 class="text-center text-2xl font-bold leading-9 tracking-tight font-pathway text-olive-black">
                                 Entrar
                             </h2>
                         </div>

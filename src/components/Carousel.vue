@@ -4,10 +4,10 @@
         :loop="true"
         :autoplay="{
             delay: 3000,
-            disableOnInteraction: true,
-            pauseOnMouseEnter: false
+            disableOnInteraction: false,
+            pauseOnMouseEnter: false,
         }"
-        class="w-full h-auto dim:h-48 dim:"
+        class="w-full h-screen dim:h-48 md:h-96 sm:h-80 xl:h-screen"
         >
         <swiper-slide v-for="(image,value) in images" :key="value" class="flex items-center justify-center">
             <img :src="image" class="w-full h-auto object-contain dim:h-min" />
