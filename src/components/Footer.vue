@@ -16,7 +16,7 @@
                           <a href="https://flowbite.com/" class="hover:underline">FAQ</a>
                       </li>
                       <li>
-                          <a href="https://tailwindcss.com/" class="hover:underline">Contact</a>
+                          <router-link to="/contact" class="hover:underline">Contact</router-link>
                       </li>
                   </ul>
               </div>

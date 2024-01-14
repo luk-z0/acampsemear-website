@@ -7,10 +7,10 @@
             disableOnInteraction: true,
             pauseOnMouseEnter: false
         }"
-        class="w-full h-screen"
+        class="w-full h-auto dim:h-48 dim:"
         >
         <swiper-slide v-for="(image,value) in images" :key="value" class="flex items-center justify-center">
-            <img :src="image" class="w-full h-auto object-contain"/>
+            <img :src="image" class="w-full h-auto object-contain dim:h-min" />
         </swiper-slide>
     </swiper>
 </template>
