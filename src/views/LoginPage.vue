@@ -1,12 +1,6 @@
 <template>
-  <MainBar class="w-full top-0 z-50" />
-  <div class="min-h-screen flex items-center justify-center relative sm:static">
-    <img :src="bglogin" alt="" class="object-cover w-full h-full dim:h-screen md:h-screen" />
-    <!-- <div class="absolute inset-0 bg-black opacity-50"></div> -->
-    <div
-        class="flex w-1/2 h-1/2 dim:h-4/5 dim:w-11/12 lg:h-4/5 justify-center absolute bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 shadow-lg">
-        <div class="flex justify-center">
-            <div
+    <FormComponent>
+        <div
             class="flex absolute min-h-full flex-1 flex-col justify-center lg:px-8"
             >
             <div class="flex flex-col w-auto h-auto">
@@ -75,19 +69,14 @@
                 </p>
                 </div>
             </div>
-            </div>
-      </div>
-    </div>
-  </div>
-  <Footer />
+        </div>
+    </FormComponent>
 </template>
 
 <script setup>
 import acampicon from "./../assets/image/acamp-icon.png";
-import MainBar from "./../components/MainBar.vue";
-import Footer from "./../components/Footer.vue";
+import FormComponent from "../components/FormComponent.vue";
 import router from "../router";
-import bglogin from "./../assets/image/bglogin.jpg";
 
 function getHome() {
   router.push({ path: "/" });

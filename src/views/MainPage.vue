@@ -5,9 +5,9 @@
       <div class="min-h-full w-full absolute opacity-50 bg-olive-black"></div>
       <div class="absolute mx-32 h-full w-2/4">
         <div class="dim:-ml-20 dim:mt-10 m-10">
-          <div class="sm:my-16 sm:mx-8 xl:my-64 lx:mx-32 lg:my-32">
+          <div class="sm:my-16 sm:mx-8 xl:my-64 lx:mx-32 lg:my-32 dim:">
             <h3
-              class="sm:text-4xl md:text-3xl lg:text-6xl dim:text-xl font-normal text-left  text-[#AADE76] font-pathway">
+              class="sm:text-4xl md:text-3xl lg:text-6xl dim:text-md font-normal text-left text-[#AADE76] font-pathway">
               MARCANDO MOMENTOS,
               <br class="dim:hidden">
               VIVENDO AVENTURAS.
@@ -57,29 +57,25 @@
   </div>
   <div class="flex flex-row dim:flex-col sm:flex-col xl:flex-row">
     <div
-      class="flex bg-olive-black w-1/2 dim:w-full sm:w-full xl:max-h-screen justify-center sm:items-center min-h-full py-5">
-      <div class="flex flex-wrap flex-col sm:flex-row xl:flex-col">
-        <div
-          class="transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 hover:bg-shadow-black duration-200 bg-halloween-orange rounded-lg 2xl:m-5 2xl:px-32 2xl:py-40 dim:px-12 dim:py-16 dim:m-2 sm:m-3 sm:px-16 sm:py-20 shadow-lg">
-        </div>
-        <div
-          class="transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 hover:bg-shadow-black duration-200 bg-palatinate-blue rounded-lg 2xl:m-5 2xl:px-32 2xl:py-40 dim:px-12 dim:py-16 dim:m-2 sm:m-3 sm:px-16 sm:py-20 shadow-lg">
-        </div>
-      </div>
-      <div class="flex flex-wrap flex-col sm:flex-row xl:flex-col">
-        <div
-          class="transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 hover:bg-shadow-black duration-200 bg-light-khaki rounded-lg 2xl:m-5 2xl:px-32 2xl:py-40 dim:px-12 dim:py-16 dim:m-2 sm:m-3 sm:px-16 sm:py-20 shadow-lg">
-        </div>
-        <div
-          class="transition ease-in-out delay-80 hover:-translate-y-1 hover:scale-110 hover:bg-shadow-black duration-200 bg-mossgreen rounded-lg 2xl:m-5 2xl:px-32 2xl:py-40 dim:px-12 dim:py-16 dim:m-2 sm:m-3 sm:px-16 sm:py-20 shadow-lg">
-        </div>
-      </div>
+      class="dim:overflow-x-auto flex xl:flex-wrap bg-olive-black w-1/2 dim:w-full sm:w-full xl:max-h-screen justify-center sm:items-center min-h-full xl:py-24 xl:px-12 dim:py-2 py-5">
+      <CardComponent class="bg-mossgreen"> 
+
+      </CardComponent>
+      <CardComponent class="bg-mossgreen"> 
+
+      </CardComponent>
+      <CardComponent class="bg-mossgreen"> 
+
+      </CardComponent>
+      <CardComponent class="bg-mossgreen"> 
+
+      </CardComponent>
     </div>
-    <div class="w-1/2 dim:w-full dim:h-96 max-h-full xl:max-h-screen sm:h-3/4 sm:w-full">
-      <div class="flex items-center justify-center h-full xl:h-screen bg-olive-black dim:bg-olive-black">
-        <div class="flex items-center justify-center sm:h-3/4 w-3/4 h-3/4 xl:w-full dim:w-full dim:h-full dim:bg-none">
+    <div class="w-1/2 dim:w-full dim:h-full max-h-full xl:max-h-screen sm:h-3/4 sm:w-full">
+      <div class="flex items-center justify-center h-full xl:h-screen bg-olive-black dim:bg-olive-black pb-5">
+        <div class="flex items-center justify-center w-3/4 h-3/4 xl:w-full dim:w-full dim:h-full dim:bg-none">
           <iframe
-            class="sm:h-80 xl:h-full xl:w-full sm:w-full w-3/4 h-3/4 aspect-video xl:p-20 xl:m-10 bg-orange-300 rounded-lg  "
+            class="sm:h-80 xl:h-full xl:w-full sm:w-full w-3/4 h-3/4 aspect-video xl:p-20 xl:m-10 bg-orange-300 rounded-lg"
             src="https://www.youtube.com/embed/nf4aaFNcLHQ?si=Fm_zv5-W1ElIJy1Y" title="Video Acamp 2023" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
@@ -116,6 +112,8 @@ import teamimage from "./../assets/image/mvp-image.jpg";
 import MainBar from "./../components/MainBar.vue";
 import Footer from "./../components/Footer.vue";
 import Carousel from "./../components/Carousel.vue";
+import CardComponent from "../components/CardComponent.vue";
+
 
 
 </script>
