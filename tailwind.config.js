@@ -117,6 +117,7 @@ module.exports = {
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),
+    require('tailwindcss-animated'),
     require('@tailwindcss/forms'),
     require('@headlessui/tailwindcss'),
     function ({ addUtilities }) {
