@@ -8,11 +8,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/vue-fontawesome": "^3.0.6",
     "@headlessui/tailwindcss": "^0.2.0",
     "@headlessui/vue": "^1.7.17",
     "@heroicons/vue": "^2.1.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "swiper": "^11.0.5",
+    "tailwindcss-animated": "^1.0.1",
     "vue": "^3.3.4",
     "vue-router": "^4.2.2"
   },
