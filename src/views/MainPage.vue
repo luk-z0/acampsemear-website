@@ -3,17 +3,16 @@
   <div class="relative">
     <div class="relative">
       <div class="min-h-full w-full absolute opacity-50 bg-olive-black"></div>
-      <div class="absolute mx-32 h-full w-2/4">
-        <div class="dim:-ml-20 dim:mt-10 m-10">
-          <div class="sm:my-16 sm:mx-8 xl:my-64 lx:mx-32 lg:my-32 dim:">
+      <div class="absolute lg:mx-32 lg:my-32 sm:mx-24 sm:my-24 dim:mx-24 dim:my-12 h-full w-2/4">
+        <div class="dim:-ml-20 sm:-ml-12">
+          <div class="sm:my-18 xl:my-64 lx:mx-32 lg:my-32">
             <h3
-              class="sm:text-4xl md:text-3xl lg:text-6xl dim:text-md font-normal text-left text-[#AADE76] font-pathway">
+              class="sm:text-4xl md:text-3xl lg:text-6xl dim:text-xl font-normal text-left text-[#AADE76] font-pathway">
               MARCANDO MOMENTOS,
-              <br class="dim:hidden">
               VIVENDO AVENTURAS.
             </h3>
             <p
-              class="dim:text-[8px] sm:text-xs sm:text-left text-[#D0E3BD] lg:text-2xl md:text-lg my-2 dim:my-0 dim:text-sm text-justify font-pathway hyphens-auto w-4/5 lg:w-full">
+              class="dim:text-[8px] sm:text-xs sm:text-left text-[#D0E3BD] lg:text-2xl md:text-lg my-2 dim:my-0 dim:text-sm text-justify font-pathway hyphens-auto w-4/5 lg:w-full dim:w-full">
               O acampamento da Igreja Batista Semear com Cristo está cada dia mais aprimorado,<br
                 class="2xl:block md:hidden sm:hidden dim:hidden"> buscando trazer a cada temporada momentos inesqueciveis.
             </p>
@@ -56,19 +55,50 @@
     </div>
   </div>
   <div class="flex flex-row dim:flex-col sm:flex-col xl:flex-row">
-    <div
-      class="dim:overflow-x-auto flex xl:flex-wrap bg-olive-black w-1/2 dim:w-full sm:w-full xl:max-h-screen justify-center sm:items-center min-h-full xl:py-24 xl:px-12 dim:py-2 py-5">
+    <div class="flex dim:flex-wrap xl:flex-wrap bg-olive-black w-1/2 dim:w-full sm:w-full xl:max-h-screen justify-center sm:items-center max-h-full xl:py-24 xl:px-12 dim:py-5">
       <CardComponent class="bg-mossgreen"> 
-
+        <template v-slot:icon>
+          <font-awesome-icon icon="book-bible" />
+        </template>
+        <template v-slot:title>
+          <p>Devocional 1</p>
+        </template>
+        <template v-slot:text>
+          texto simples para exemplo,<br> não precisa ser muito grande.
+        </template>
       </CardComponent>
       <CardComponent class="bg-mossgreen"> 
-
+        <template v-slot:icon>
+          <font-awesome-icon icon="book-bible" />
+        </template>
+        <template v-slot:title>
+          <p>Devocional 2</p>
+        </template>
+        <template v-slot:text>
+          texto simples para exemplo,<br> não precisa ser muito grande.
+        </template>
       </CardComponent>
       <CardComponent class="bg-mossgreen"> 
-
+        <template v-slot:icon>
+          <font-awesome-icon icon="book-bible" />
+        </template>
+        <template v-slot:title>
+          <p>Devocional 3</p>
+        </template>
+        <template v-slot:text>
+          texto simples para exemplo,<br> não precisa ser muito grande.
+        </template>
       </CardComponent>
       <CardComponent class="bg-mossgreen"> 
-
+        <template v-slot:icon>
+          <font-awesome-icon icon="book-bible" />
+        </template>
+        <template v-slot:title>
+          <p>Devocional 4</p>
+        </template>
+        <template v-slot:text>
+          texto simples para exemplo,<br> não precisa ser muito grande.
+        </template>
       </CardComponent>
     </div>
     <div class="w-1/2 dim:w-full dim:h-full max-h-full xl:max-h-screen sm:h-3/4 sm:w-full">
@@ -100,23 +130,33 @@
 
     </div>
  </div> -->
-
-
-
-  <!-- <Carousel/> -->
   <Footer />
 </template>
 
-<script setup>
+<script>
 import teamimage from "./../assets/image/mvp-image.jpg";
 import MainBar from "./../components/MainBar.vue";
 import Footer from "./../components/Footer.vue";
 import Carousel from "./../components/Carousel.vue";
 import CardComponent from "../components/CardComponent.vue";
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faBookBible } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faBookBible);
 
 
-
+export default {
+  components: {Carousel, CardComponent,MainBar, Footer,FontAwesomeIcon},
+  setup() {
+    
+    return {
+      teamimage,
+    };
+  },
+};
 </script>
 
 
-<style></style>
+<style>
+</style>
