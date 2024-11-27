@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-mossgreen">
+  <header class="bg-mossgreen w-full">
     <nav class="mx-auto flex max-w-7xl items-center justify-between dim:p-2.5 p-2 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
         <router-link to="/" class="-m-1.5 p-1.5">

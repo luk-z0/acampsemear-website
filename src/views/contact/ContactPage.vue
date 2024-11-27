@@ -39,7 +39,7 @@
 </template>
 
 <script setup>
-import FormComponent from "../components/FormComponent.vue";
+import FormComponent from "@components/FormComponent.vue";
 
 function redirect(evt) {
   if(evt.isTrusted){
