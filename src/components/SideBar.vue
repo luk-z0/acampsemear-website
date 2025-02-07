@@ -35,7 +35,7 @@ import { faHouse, faGear, faRightFromBracket } from '@fortawesome/free-solid-svg
 const authUser = useAuthStore();
 
 const menu = [
-  { name: "Home", icon: faHouse, path: '/' },
+  { name: "Home", icon: faHouse, component: 'HomeDashboard', label: 'Home'},
   { name: "Settings", icon: faGear, path: "/settings" },
 ]
 

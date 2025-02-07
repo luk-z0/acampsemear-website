@@ -11,7 +11,8 @@
 </template>
 
 <script>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed } from 'vue';
+import { useRoute } from 'vue-router';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -27,15 +28,18 @@ export default {
   components: { Swiper, SwiperSlide },
   setup() {
     const images = ref([]);
+    const route = useRoute();
 
-    const importImages = () => {
-      const imageContext = import.meta.globEager('@/assets/image/carouselpics/*.jpg');
-      images.value = Object.values(imageContext).map((module) => module.default || module);
+    const allImages = {
+      MainPage: import.meta.globEager('@/assets/image/carouselpics/*.jpg'),
+      UserPage: import.meta.globEager('@/assets/image/dashboardpics/*.jpg'),
     };
 
-    onMounted(() => {
-      importImages();
+    const selectedImages = computed(() => {
+      return Object.values(allImages[route.name] || {}).map((module) => module.default || module);
     });
+
+    images.value = selectedImages.value;
 
     return {
       modules: [Autoplay, Pagination],
