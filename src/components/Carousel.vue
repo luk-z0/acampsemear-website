@@ -5,7 +5,7 @@
     pauseOnMouseEnter: false,
   }" :class="className" class=" bg-olive-black">
     <swiper-slide v-for="(image, value) in images" :key="value">
-        <img :src="image" class="w-full h-auto max-h-min object-cover md:h-56 lg:h-72 xl:h-96 opacity-50" />
+        <img :src="image" alt="acamp_best_moments" class="w-full h-auto max-h-min object-cover md:h-56 lg:h-72 xl:h-96 opacity-50" />
     </swiper-slide>
   </swiper>
 </template>
@@ -45,5 +45,3 @@ export default {
 };
 
 </script>
-
-<style></style>

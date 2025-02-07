@@ -23,8 +23,13 @@ const axiosInstance = axios.create({
 
 axiosInstance.interceptors.request.use(config => {
   const { access_token } = useAuthStore();
-  config.headers.Authorization = `Bearer ${access_token}`;
+
+  if (access_token) {
+    config.headers.Authorization = `Bearer ${access_token}`;
+  }
   return config;
-});
+}), (erro) => {
+  return Promise.reject(erro);
+};
 
 export default axiosInstance;

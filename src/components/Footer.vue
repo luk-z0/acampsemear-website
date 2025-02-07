@@ -1,5 +1,5 @@
 <template>
-<footer class="bg-mossgreen w-full">
+<footer class="bg-mossgreen w-full max-h-full">
     <div class="w-full p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
