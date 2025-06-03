@@ -8,7 +8,7 @@ export const useUserStore = defineStore('user', () => {
   function setUser(params) {
     user.value = params;
   }
-  
+
   return {
     user,
     setUser

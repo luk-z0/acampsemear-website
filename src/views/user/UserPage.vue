@@ -1,16 +1,12 @@
 <template>
   <div class="flex">
-    <SideBar/>
-    <div class="flex-1">
-      <MainDashboard/>
+    <SideBar />
+    <div class="flex-1 flex flex-col">
+      <router-view/>
     </div>
   </div>
 </template>
 
 <script setup>
-import { useUserStore } from "@/store/user/user.js";
 import SideBar from "../../components/SideBar.vue";
-import MainDashboard from "../user/dashboard/HomeDashboard.vue";
-
-const userStore = useUserStore();
 </script>

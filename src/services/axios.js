@@ -7,7 +7,7 @@ const axiosInstance = axios.create({
     'Content-Type': 'application/json',
     'Access': 'application/json',
   },
-  timeout: 5000,
+  // timeout: 5000,
   // transformRequest: [
   //   (data, headers) => {
   //     const encryptedString = encryptPayload(JSON.stringify(data));

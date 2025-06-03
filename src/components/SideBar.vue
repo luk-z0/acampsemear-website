@@ -1,8 +1,10 @@
 <template>
-    <div class="flex min-h-screen ">
+    <div class="flex min-h-screen">
         <aside class="flex flex-col items-center justify-center h-screen shadow-lg bg-mossgreen">
             <div class="flex flex-col justify-center items-center max-h-min m-2">
-                <img class="mx-auto h-12 w-auto" :src="acampicon" alt="AcampSemear" />
+                <router-link to="/" class="-m-1.5 p-1.5">
+                    <img class="mx-auto h-12 w-auto" :src="acampicon" alt="AcampSemear" />
+                </router-link>
             </div>
             <hr class="border border-olive-black w-full ">
             <nav class="flex flex-1 flex-col pt-10">
@@ -26,22 +28,26 @@
 </template>
 
 <script setup>
+import { useRoute } from "vue-router";
 import acampicon from "@/assets/image/acamp-icon.png";
 import { useAuthStore } from "@/store/auth/auth.js";
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faHouse, faGear, faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faGear, faRightFromBracket, faClipboard } from '@fortawesome/free-solid-svg-icons';
+import { computed } from "vue";
 
 const authUser = useAuthStore();
+const route = useRoute();
 
-const menu = [
-  { name: "Home", icon: faHouse, component: 'HomeDashboard', label: 'Home'},
-  { name: "Settings", icon: faGear, path: "/settings" },
-]
+const menu = computed (() =>[
+    { name: "Home", icon: faHouse, component:"HomeDashboard", path: `/user/${route.params.id}/home`},
+    { name: "Settings", icon: faGear, component: "UserSettings", path: `/user/${route.params.id}/settings`},
+    { name: "Registration", icon: faClipboard, component:'RegistrationForm', path: `/user/${route.params.id}/registration` },
+])
 
 function logout() {
-  authUser.logout();
+    authUser.logout();
 }
 
-library.add(faHouse, faGear, faRightFromBracket);
+library.add(faHouse, faGear, faRightFromBracket, faClipboard);
 </script>

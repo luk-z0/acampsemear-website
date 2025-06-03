@@ -1,8 +1,8 @@
 <template>
-<footer class="bg-mossgreen w-full max-h-full">
+<footer class="bg-mossgreen w-full h-full">
     <div class="w-full p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
-          <div class="mb-6 md:mb-0">
+          <div class="md:mb-0">
               <router-link to="/" class="flex items-center">
                   <img :src="acampicon" class="h-8 me-3" alt="Acamp Logo" />
                   <span class="self-center text-2xl font-semibold whitespace-nowrap text-olive-black">ACAMP SEMEAR</span>
@@ -89,6 +89,3 @@
 <script setup>
 import acampicon from './../assets/image/acamp-icon.png';
 </script>
-
-<style>
-</style>

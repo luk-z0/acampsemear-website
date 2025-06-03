@@ -35,8 +35,7 @@
                         Registre-se
                     </router-link>
                     <br>
-                    <router-link to="/reset_password"
-                        class="font-semibold leading-6 text-orange-600 hover:text-orange-900">
+                    <router-link to="/reset_password" class="font-semibold leading-6 text-orange-600 hover:text-orange-900">
                         Esqueceu a senha
                     </router-link>
                 </p>
@@ -57,20 +56,26 @@ const auth = useAuthStore();
 const userStore = useUserStore();
 
 const userAuth = reactive({
-    login: 'gleal',
-    password: 'password'
+  login: 'lucas',
+  password: 'password'
 });
 
 async function login(e) {
-    try {
-        if (userAuth.login != null || userAuth.login != ''
-            && userAuth.password != null || userAuth.password != '') {
-            auth.login(userAuth);
-            router.push(`/user/${userStore.user.id}`);
-        }
-        e.preventDefault();
-    } catch (error) {
-        console.error(error);
+  e.preventDefault();
+
+  try {
+    if (!userAuth.login || !userAuth.password) {
+      return;
     }
+
+    const response = auth.login(userAuth);
+
+    if (response) {
+      router.push(`/user/${userStore.user.id}`);
+    }
+
+  } catch (error) {
+    console.error(error);
+  }
 }
 </script>
