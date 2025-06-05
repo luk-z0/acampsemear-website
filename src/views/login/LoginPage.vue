@@ -35,7 +35,8 @@
                         Registre-se
                     </router-link>
                     <br>
-                    <router-link to="/reset_password" class="font-semibold leading-6 text-orange-600 hover:text-orange-900">
+                    <router-link to="/reset_password"
+                        class="font-semibold leading-6 text-orange-600 hover:text-orange-900">
                         Esqueceu a senha
                     </router-link>
                 </p>
@@ -48,34 +49,29 @@
 import acampicon from "@/assets/image/acamp-icon.png";
 import FormComponent from "@/components/FormComponent.vue";
 import { useAuthStore } from "@/store/auth/auth.js";
-import { useUserStore } from "@/store/user/user.js";
+import { useUserStore } from "@/store/user/user";
 import { reactive } from "vue";
-import router from "@/router";
+import router from "../../router";
 
 const auth = useAuthStore();
 const userStore = useUserStore();
 
 const userAuth = reactive({
-  login: 'lucas',
-  password: 'password'
+    login: 'lucas',
+    password: 'password'
 });
 
 async function login(e) {
-  e.preventDefault();
+    e.preventDefault();
 
-  try {
     if (!userAuth.login || !userAuth.password) {
-      return;
+        return;
     }
 
-    const response = auth.login(userAuth);
+    const response = await auth.login(userAuth);
 
     if (response) {
-      router.push(`/user/${userStore.user.id}`);
-    }
-
-  } catch (error) {
-    console.error(error);
-  }
+        router.push(`/user/${userStore.user.id}`);
+    }else alert('Tá ERRADO')
 }
 </script>

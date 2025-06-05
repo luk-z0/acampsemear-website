@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import auth from "../services/middleware/auth";
+import authMiddleware from "../services/middleware/authMiddleware";
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,21 +28,19 @@ const router = createRouter({
 			path: "/user/:id",
 			name: "UserPage",
 			meta: {
-				auth: true,
+				requiresAuth: authMiddleware,
 			},
 			children: [
-                {
-                    path: "home",
+				{
+					path: "home",
 					name: "HomeDashboard",
-					component: () =>
-						import("@/views/user/dashboard/HomeDashboard.vue"),
-                },
-                {
-                    path: "settings",
+					component: () => import("@/views/user/dashboard/HomeDashboard.vue"),
+				},
+				{
+					path: "settings",
 					name: "UserSettings",
-					component: () =>
-						import("@/views/user/settings/UserSettings.vue"),
-                },
+					component: () => import("@/views/user/settings/UserSettings.vue"),
+				},
 				{
 					path: "registration",
 					name: "RegistrationForm",
@@ -60,12 +58,6 @@ const router = createRouter({
 	],
 });
 
-router.beforeEach(async (to, from, next) => {
-	if (to.meta.auth) {
-		await auth({ to, from, next });
-	} else {
-		next();
-	}
-});
+router.beforeEach(authMiddleware);
 
 export default router;
