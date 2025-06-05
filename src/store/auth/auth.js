@@ -4,19 +4,24 @@ import { useUserStore } from "@/store/user/user";
 import { ref } from "vue";
 import router from "../../router";
 
+
 export const useAuthStore = defineStore("authentication", () => {
 	const access_token = ref(localStorage.getItem("access_token"));
 	const userStore = useUserStore();
 
 	async function login(payload) {
-		await Connection.post("/login", payload)
-			.then((response) => {
+		try {
+			const response = await Connection.post("/login", payload);
+
+			if (response) {
 				setToken(response.data.access_token);
-				me();
-			})
-			.catch((error) => {
-				console.error(error);
-			});
+				await me();
+			}
+
+			return true;
+		} catch (error) {
+			return error;
+		}
 	}
 
 	async function setToken(tokenValue) {
