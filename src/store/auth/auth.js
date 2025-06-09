@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import Connection from "@/services/axios.js";
+import Connection from "@/services/plugins/axios.js";
 import { useUserStore } from "@/store/user/user";
 import { ref } from "vue";
 import router from "../../router";
