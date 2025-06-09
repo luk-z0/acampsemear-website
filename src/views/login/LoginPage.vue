@@ -72,6 +72,6 @@ async function login(e) {
 
     if (response) {
         router.push(`/user/${userStore.user.id}`);
-    }else alert('Tá ERRADO')
+    }
 }
 </script>
